@@ -23,9 +23,30 @@ class OperationStrategyImplTest {
     }
 
     @Test
-    void getOperationHandler_validOperation_ok() {
+    void getOperationHandler_validOperationBalance_ok() {
         assertEquals(BalanceOperation.class, operationStrategy
                 .getOperationHandler(FruitTransaction.Operation.BALANCE)
+                .getClass());
+    }
+
+    @Test
+    void getOperationHandler_validOperationPurchase_ok() {
+        assertEquals(PurchaseOperation.class, operationStrategy
+                .getOperationHandler(FruitTransaction.Operation.PURCHASE)
+                .getClass());
+    }
+
+    @Test
+    void getOperationHandler_validOperationReturn_ok() {
+        assertEquals(ReturnOperation.class, operationStrategy
+                .getOperationHandler(FruitTransaction.Operation.RETURN)
+                .getClass());
+    }
+
+    @Test
+    void getOperationHandler_validOperationSupply_ok() {
+        assertEquals(SupplyOperation.class, operationStrategy
+                .getOperationHandler(FruitTransaction.Operation.SUPPLY)
                 .getClass());
     }
 
