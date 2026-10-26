@@ -9,9 +9,9 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 class CsvFileReaderServiceTest {
-    private static final String VALID_PATH_TO_FILE = "src/main/resources/testReportToRead.csv";
+    private static final String VALID_PATH_TO_FILE = "src/test/resources/testReportToRead.csv";
     private static final int EXPECTED_LIST_SIZE = 9;
-    private static final String INVALID_PATH_TO_FILE = "src/main/resources/invalidPath.csv";
+    private static final String INVALID_PATH_TO_FILE = "src/test/resources/invalidPath.csv";
     private final FileReaderService fileReaderService = new CsvFileReaderService();
 
     @Test

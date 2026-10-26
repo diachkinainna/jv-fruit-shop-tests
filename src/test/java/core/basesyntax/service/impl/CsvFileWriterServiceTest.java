@@ -11,7 +11,7 @@ import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
 
 class CsvFileWriterServiceTest {
-    private static final String TEST_FINAL_REPORT_PATH = "src/main/resources/testFinalReport.csv";
+    private static final String TEST_FINAL_REPORT_PATH = "src/test/resources/testFinalReport.csv";
     private final FileWriterService fileWriterService = new CsvFileWriterService();
 
     @Test
